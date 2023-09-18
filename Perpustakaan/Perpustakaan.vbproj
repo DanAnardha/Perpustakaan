@@ -1,0 +1,419 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7E6A1406-1174-4D9B-88BD-6EF539B4157E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>WindowsApplication1.My.MyApplication</StartupObject>
+    <RootNamespace>WindowsApplication1</RootNamespace>
+    <AssemblyName>Perpustakaan</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>D:\Danuar%27s Files\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <TargetCulture>id</TargetCulture>
+    <PublisherName>Danuar Aditya Anardha</PublisherName>
+    <ApplicationRevision>5</ApplicationRevision>
+    <ApplicationVersion>1.3.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <BootstrapperComponentsLocation>Relative</BootstrapperComponentsLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Perpustakaan.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Perpustakaan.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>BF21F56E78A9AA9662EA7B8969EF764AB4FAF709</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Perpustakaan_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>agenda.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormCariDataAnggota.Designer.vb">
+      <DependentUpon>FormCariDataAnggota.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormCariDataAnggota.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCariDataBuku.Designer.vb">
+      <DependentUpon>FormCariDataBuku.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormCariDataBuku.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDataPeminjaman.Designer.vb">
+      <DependentUpon>FormDataPeminjaman.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormDataPeminjaman.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDataPengembalian.Designer.vb">
+      <DependentUpon>FormDataPengembalian.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormDataPengembalian.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDetailPeminjaman.Designer.vb">
+      <DependentUpon>FormDetailPeminjaman.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormDetailPeminjaman.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDetailPengembalian.Designer.vb">
+      <DependentUpon>FormDetailPengembalian.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormDetailPengembalian.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogin.Designer.vb">
+      <DependentUpon>FormLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMasterAnggota.Designer.vb">
+      <DependentUpon>FormMasterAnggota.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMasterAnggota.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMasterBuku.Designer.vb">
+      <DependentUpon>FormMasterBuku.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMasterBuku.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMasterKatalog.Designer.vb">
+      <DependentUpon>FormMasterKatalog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMasterKatalog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMasterKategori.Designer.vb">
+      <DependentUpon>FormMasterKategori.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMasterKategori.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMasterLembaga.Designer.vb">
+      <DependentUpon>FormMasterLembaga.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMasterLembaga.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMasterPetugas.Designer.vb">
+      <DependentUpon>FormMasterPetugas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMasterPetugas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPengaturan.Designer.vb">
+      <DependentUpon>FormPengaturan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormPengaturan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTransaksiPeminjaman.Designer.vb">
+      <DependentUpon>FormTransaksiPeminjaman.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormTransaksiPeminjaman.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTransaksiPengembalian.Designer.vb">
+      <DependentUpon>FormTransaksiPengembalian.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormTransaksiPengembalian.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HalamanUtama.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HalamanUtama.Designer.vb">
+      <DependentUpon>HalamanUtama.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LaporanMaster.Designer.vb">
+      <DependentUpon>LaporanMaster.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LaporanMaster.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LaporanPeminjaman.Designer.vb">
+      <DependentUpon>LaporanPeminjaman.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LaporanPeminjaman.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LaporanPengembalian.Designer.vb">
+      <DependentUpon>LaporanPengembalian.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LaporanPengembalian.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module1.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="NotaPeminjaman.Designer.vb">
+      <DependentUpon>NotaPeminjaman.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NotaPeminjaman.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NotaPengembalian.Designer.vb">
+      <DependentUpon>NotaPengembalian.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NotaPengembalian.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Progress.Designer.vb">
+      <DependentUpon>Progress.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Progress.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FormCariDataAnggota.resx">
+      <DependentUpon>FormCariDataAnggota.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCariDataBuku.resx">
+      <DependentUpon>FormCariDataBuku.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDataPeminjaman.resx">
+      <DependentUpon>FormDataPeminjaman.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDataPengembalian.resx">
+      <DependentUpon>FormDataPengembalian.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDetailPeminjaman.resx">
+      <DependentUpon>FormDetailPeminjaman.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDetailPengembalian.resx">
+      <DependentUpon>FormDetailPengembalian.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogin.resx">
+      <DependentUpon>FormLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMasterAnggota.resx">
+      <DependentUpon>FormMasterAnggota.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMasterBuku.resx">
+      <DependentUpon>FormMasterBuku.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMasterKatalog.resx">
+      <DependentUpon>FormMasterKatalog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMasterKategori.resx">
+      <DependentUpon>FormMasterKategori.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMasterLembaga.resx">
+      <DependentUpon>FormMasterLembaga.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMasterPetugas.resx">
+      <DependentUpon>FormMasterPetugas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPengaturan.resx">
+      <DependentUpon>FormPengaturan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTransaksiPeminjaman.resx">
+      <DependentUpon>FormTransaksiPeminjaman.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTransaksiPengembalian.resx">
+      <DependentUpon>FormTransaksiPengembalian.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HalamanUtama.resx">
+      <DependentUpon>HalamanUtama.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LaporanMaster.resx">
+      <DependentUpon>LaporanMaster.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LaporanPeminjaman.resx">
+      <DependentUpon>LaporanPeminjaman.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LaporanPengembalian.resx">
+      <DependentUpon>LaporanPengembalian.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NotaPeminjaman.resx">
+      <DependentUpon>NotaPeminjaman.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NotaPengembalian.resx">
+      <DependentUpon>NotaPengembalian.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Progress.resx">
+      <DependentUpon>Progress.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Perpustakaan_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxCrystal">
+      <Guid>{00025600-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>2</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="Crystal">
+      <Guid>{00025600-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>2</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="agenda.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
